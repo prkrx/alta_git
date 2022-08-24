@@ -4,7 +4,8 @@
 Nama: Richo Dwi Wardiyanto Romadhon 
 
 ## Summary
-melakukan git push, merge dan branch
+setelah menyelesaikan tugas peraktikum, saya dapat menyimpulkan bahwa saya telah mempelajari hal baru yaitu mengenai git dan github 
+untuk git yaitu, branch, merge, dll, yang github bisa melakukan pull dan merge 
 ## Task
 
 ### Task 01
