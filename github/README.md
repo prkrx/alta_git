@@ -1,7 +1,7 @@
 # (03) Basic Version and Branch Management (Git)
 ## Data Diri
-Nomor Urut: 
-Nama: 
+
+Nama: Richo Dwi Wardiyanto Romadhon 
 
 ## Summary
 melakukan git push, merge dan branch
