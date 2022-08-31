@@ -1,4 +1,4 @@
-# (05) Introduction to Algorithm and Dart Programming
+# (06) Basic Dart Programming
 ## Data Diri
 
 Nama: Richo Dwi Wardiyanto Romadhon 
