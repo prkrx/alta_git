@@ -4,5 +4,13 @@
 Nama: Richo Dwi Wardiyanto Romadhon 
 
 ## Summary
-setelah menyelesaikan tugas peraktikum, saya dapat menyimpulkan bahwa saya telah mempelajari hal baru yaitu mengenai tipe data yaitu :
-tentang perbandingan, pengulangan, dan fungsi dengan parameter 
+
+### Task 1
+faktorial adalah sebuah perkalian dimana hasil dari perhitungan dikali dengan hasil tersebut selama nilai yang di masuk tidak boleh lebih dari
+perbandingan adalah sebuah membandingkan dari sebuah kedua nilai tersebut
+
+### Task 2
+saya membuat input nilai yaitu menggunkan stdin dan menggunakan looping for dan menggunakan tanda $(dollar) untuk menampilkan hasil tersebut
+
+### Task 3
+sayang menggukan if, dan if else untuk membandingan antara kedua nilai 
