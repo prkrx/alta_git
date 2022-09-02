@@ -9,10 +9,9 @@ untuk git yaitu, branch, merge, dll, yang github bisa melakukan pull dan merge
 ## Task
 
 ### Task 01
-untuk screenchost pertama saya melakukan [add and stash](https://github.com/prkrx/alta_git/blob/master/github/screenshot/add%20and%20stash.png)
+kita harus melakukan init terlebih dahulu, setelah itu kita tambahkan fungsi git add yaitu menambahkan kode ke dalam staging area 
 ### Task 02
-untuk screenchost kedua saya melakukan [conflict](https://github.com/prkrx/alta_git/blob/master/github/screenshot/conflict.png)
+jika sudah melakukan git add, lanjut melakukan git commit adalah untuk memberi pesan prubahan dalam suatu kodingan 
 ### Task 03
-untuk screenshot ketiga saya melakukan [merge and pull](https://github.com/prkrx/alta_git/blob/master/github/screenshot/merge%20and%20pull.png)
-### Task 04
-untuk yang terakhir branching dan yang lainnya bisa di lihat dari [network](https://github.com/prkrx/alta_git/network)
+dan yang terakhir yaitu git push, git push adalam memasukkan folder kita ke dalam github
+
