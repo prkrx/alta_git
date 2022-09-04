@@ -4,14 +4,7 @@
 Nama: Richo Dwi Wardiyanto Romadhon 
 
 ## Summary
-setelah menyelesaikan tugas peraktikum, saya dapat menyimpulkan bahwa saya telah mempelajari hal baru yaitu mengenai git dan github 
-untuk git yaitu, branch, merge, dll, yang github bisa melakukan pull dan merge 
-## Task
 
-### Task 01
-kita harus melakukan init terlebih dahulu, setelah itu kita tambahkan fungsi git add yaitu menambahkan kode ke dalam staging area 
-### Task 02
-jika sudah melakukan git add, lanjut melakukan git commit adalah untuk memberi pesan prubahan dalam suatu kodingan 
-### Task 03
-dan yang terakhir yaitu git push, git push adalam memasukkan folder kita ke dalam github
-
+1. git add yang artinya melkakukan penambahan di staging area
+2. git commit yang artinya memberi penjelasan perubahan pada file tersebut
+3. git push tang artinya memasukkan file/folder ke github
