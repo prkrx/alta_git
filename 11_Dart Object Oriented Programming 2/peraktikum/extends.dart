@@ -1,15 +1,17 @@
 abstract class BangunRuang {
- 
+ int? panjang;
+ int? lebar;
+ int? tinggi;
  void volume(); 
 }
 
 class Balok extends BangunRuang {
-  @override
+  
   int volume({int panjang = 3, int lebar = 2, int tinggi = 2}) => panjang * lebar * tinggi;
 }
 
 class Kubus extends BangunRuang {
-  @override
+  
   int volume({sisi = 5}) => sisi * sisi * sisi;
 }
 
