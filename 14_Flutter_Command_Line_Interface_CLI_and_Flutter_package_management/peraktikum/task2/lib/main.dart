@@ -1,7 +1,6 @@
 import 'package:barcode_widget/barcode_widget.dart';
 import 'package:flutter/material.dart';
 
-// ignore_for_file: public_member_api_docs
 
 void main() => runApp(const MyApp());
 
