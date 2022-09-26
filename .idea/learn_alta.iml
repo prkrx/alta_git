@@ -74,6 +74,9 @@
       <excludeFolder url="file://$MODULE_DIR$/16_Assets/peraktikum/task1/windows/flutter/ephemeral/.plugin_symlinks/url_launcher_windows/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/16_Assets/peraktikum/task1/windows/flutter/ephemeral/.plugin_symlinks/url_launcher_windows/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/16_Assets/peraktikum/task1/windows/flutter/ephemeral/.plugin_symlinks/url_launcher_windows/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/16_Assets/peraktikum/task2/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/16_Assets/peraktikum/task2/build" />
+      <excludeFolder url="file://$MODULE_DIR$/16_Assets/peraktikum/task2/.pub" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 33, extension level 3 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
