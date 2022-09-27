@@ -3,91 +3,97 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
-  final Nama = TextEditingController(text: "Richo Dwi Wardiyanto Romadhon");
-  final Telpon = TextEditingController(text: "085822553194");
-  
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
 
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
 
-class _MyAppState extends State<MyApp> {
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  static const String _title = 'Flutter Code Sample';
+
   @override
   Widget build(BuildContext context) {
-    const appTitle = 'Contacts';
-    return MaterialApp(
-      title: appTitle,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text(appTitle),
-        ),
-        body: const Contacts(),
+    return new MaterialApp(
+      title: 'Flutter Demo',
+      home: new ListBuilder(),
+    );
+  }
+}
+
+class ListBuilder extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: ListView(
+          // ignore: prefer_const_literals_to_create_immutables
+          children: <Widget>[
+            const Card(
+              child: ListTile(
+                leading: FlutterLogo(size: 56.0),
+                title: Text('Made'),
+                subtitle: Text('0866571373'),
+                trailing: Icon(Icons.more_vert),
+              ),
+            ),
+            const Card(
+              child: ListTile(
+                leading: FlutterLogo(size: 56.0),
+                title: Text('Dodi'),
+                subtitle: Text('08452214516'),
+                trailing: Icon(Icons.more_vert),
+              ),
+            ),
+            const Card(
+              child: ListTile(
+                leading: FlutterLogo(size: 56.0),
+                title: Text('Andi'),
+                subtitle: Text('0865713613'),
+                trailing: Icon(Icons.more_vert),
+              ),
+            ),
+            const Card(
+              child: ListTile(
+                leading: FlutterLogo(size: 56.0),
+                title: Text('Reza'),
+                subtitle: Text('085563713'),
+                trailing: Icon(Icons.more_vert),
+              ),
+            ),
+            ElevatedButton(
+            onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const SecondRoute()),
+            );
+          },
+              child: const Text('Create New Contact'),
+          ),
+        ],
       ),
     );
   }
 }
 
-class Contacts extends StatefulWidget {
-  const Contacts({super.key});
-  
-  @override
-  State<Contacts> createState() => _ContactsState();
-}
-
-class _ContactsState extends State<Contacts> {
-
+class SecondRoute extends StatelessWidget {
+  const SecondRoute({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return ListView(
+Widget build(BuildContext context) {
+  return Material(
+    child:  ListView(
       children: <Widget>[
         TextField(
           decoration: InputDecoration(labelText: 'Nama'),
-          controller: Nama,
         ),
         TextField(
           decoration: InputDecoration(labelText: 'No Telpon'),
-          controller: Telpon,
         ),
         ElevatedButton(
           onPressed: () {
-           _sendDataToSecondScreen(context);
           },
           child: new Text('Submit'),
         ),
       ],
-    );
-  }
-  void _sendDataToSecondScreen(BuildContext context) {
-    String textToSend = Nama.text;
-    String textToSend2 = Telpon.text;
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => SecondScreen(text: textToSend, text2: textToSend2),
-        ));
-  }
-}
-
-
-class SecondScreen extends StatelessWidget {
-  final String text;
-  final String text2;
-  // receive data from the FirstScreen as a parameter
-  SecondScreen({Key, required this.text, required this.text2}) : super();
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("New Contacts")),
-      body: ListView(
-        children: <Widget>[
-          Text(text),
-          Text(text2)
-        ],
-      ),
-    );
+    ),
+  );
   }
 }
