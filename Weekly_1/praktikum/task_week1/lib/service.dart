@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-class ContactUs extends StatefulWidget {
-  const ContactUs({Key key}) : super(key: key);
+class Contact extends StatefulWidget {
+  const Contact({Key key}) : super(key: key);
 
   @override
-  State<ContactUs> createState() => _ContactUsState();
+  State<Contact> createState() => _ContactState();
 }
 
-class _ContactUsState extends State<ContactUs> {
+class _ContactState extends State<Contact> {
   final _firstname = TextEditingController();
   final _lastname = TextEditingController();
   final _email = TextEditingController();
@@ -30,7 +30,6 @@ class _ContactUsState extends State<ContactUs> {
           ),
           title: Text(
             'Xfellz',
-            style: TextStyle(),
           ),
           centerTitle: true,
           flexibleSpace: Container(
@@ -38,7 +37,8 @@ class _ContactUsState extends State<ContactUs> {
                 gradient: LinearGradient(
                     colors: [Colors.blue, Colors.grey.shade800],
                     begin: FractionalOffset.topLeft,
-                    end: FractionalOffset.bottomRight)),
+                    end: FractionalOffset.bottomRight)
+                    ),
           ),
         ),
         body: SingleChildScrollView(

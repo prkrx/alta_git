@@ -13,10 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'Sen',
         brightness: Brightness.dark
       ),
-      home: ContactUs(),
+      home: Contact(),
     );
   }
 }
