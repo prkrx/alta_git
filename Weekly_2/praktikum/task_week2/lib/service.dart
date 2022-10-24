@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_week1/profile.dart';
-import 'package:task_week1/view/about.dart';
+import '/view/about.dart';
+
 
 class Contact extends StatefulWidget {
   const Contact({Key key}) : super(key: key);
@@ -50,38 +51,30 @@ class _ContactState extends State<Contact> {
               Container(
                 padding: EdgeInsets.all(20),
                 width: double.infinity,
-                height: 150,
-                decoration: BoxDecoration(
-                    color: Color.fromARGB(100, 6, 100, 255)
-                    ),
-                alignment: Alignment.bottomLeft,
-                child: Text(
-                  'Menu',
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                ),
+                height: 100,
+                
               ),
               ListTile(
                 contentPadding: EdgeInsets.all(10),
-                leading: Icon(Icons.chat_outlined, size: 40,),
-                title: Text('Kontak Kami', style: TextStyle(fontSize: 20),),
+                leading: Icon(Icons.contact_page, size: 40,),
+                title: Text('Kontak Kami', style: TextStyle(fontSize: 25),),
                 onTap: (){
 
                 },
               ),
               ListTile(
                 contentPadding: EdgeInsets.all(10),
-                leading: Icon(Icons.contact_support_outlined, size: 40,),
-                title: Text('Tentang Kami', style: TextStyle(fontSize: 20),),
+                leading: Icon(Icons.support, size: 40,),
+                title: Text('Tentang Kami', style: TextStyle(fontSize: 25),),
                 onTap: (){
                   return Navigator.push(context, MaterialPageRoute(builder: (context){return AboutUs();}));
                 },
               ),
               ListTile(
                 contentPadding: EdgeInsets.all(10),
-                leading: Icon(Icons.login_rounded, size: 40,),
-                title: Text('Masuk', style: TextStyle(fontSize: 20),),
+                leading: Icon(Icons.person, size: 40,),
+                title: Text('Masuk', style: TextStyle(fontSize: 25),),
                 onTap: (){
-
                 },
               ),
             ],
@@ -135,16 +128,17 @@ class _ContactState extends State<Contact> {
                                   'Jika ada pertanyaan bisa tulis di bawah ini'),
                             ),
                           ),
-                          //Row Input Field
+                          //Column Input Field
                           Padding(
-                            padding: EdgeInsets.only(top: 30),
+                            padding: EdgeInsets.only(top: 15),
                             child: Container(
-                                child: Row(
+                                child: Column(
                               children: [
                                 //First Name input field
                                 Container(
-                                  padding: EdgeInsets.only(left: 15),
-                                  width: 160,
+                                  padding: EdgeInsets.only(right: 0 ),
+                                  
+                                  width: 370,
                                   child: TextField(
                                     controller: _firstname,
                                     decoration: InputDecoration(
@@ -157,8 +151,9 @@ class _ContactState extends State<Contact> {
                                 ),
                                 //Last Name input field
                                 Container(
-                                  padding: EdgeInsets.only(left: 20),
-                                  width: 170,
+                                  padding: EdgeInsets.only(right: 0, top: 15),
+                                  
+                                  width: 370,
                                   child: TextField(
                                     controller: _lastname,
                                     decoration: InputDecoration(

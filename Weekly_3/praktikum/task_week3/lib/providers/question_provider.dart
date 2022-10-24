@@ -10,7 +10,7 @@ class AskProvider with ChangeNotifier{
     notifyListeners();
   }
 
-  Future<void> removeQuestion (AskModel nanya) async {
+  Future<void> removeQuestion (AskModel qestion) async {
     await Future.delayed(Duration(seconds: 4));
     _questions.clear();
     notifyListeners();

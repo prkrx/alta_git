@@ -122,7 +122,7 @@ class _ProfileAddState extends State<ProfileAdd> {
                         },
                         child: Text('Pilih foto data diri anda')),
                   ),
-
+  
                   //Name Field
                   Padding(
                     padding: EdgeInsets.only(top: 20, left: 15, right: 15),
